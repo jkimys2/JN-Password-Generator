@@ -30,6 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* some of the classes were changed to ids because they were only being called once */
 #card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
