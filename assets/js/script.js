@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var cardBody = document.querySelector(".card-body");
 
 // Write password to the #password input
 function writePassword() {
@@ -67,9 +68,9 @@ function generatePassword() {
   for (var i = 0; i < passwordLength; i++) {
     var randomCharacters = Math.floor((Math.random() * chosenArray.length - 1) + 1);
     passwordString += chosenArray[randomCharacters];
-  };
+  } 
+  return passwordString;
 }
-  
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
