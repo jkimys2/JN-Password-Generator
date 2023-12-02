@@ -2,7 +2,7 @@
 
 ## Description
 
-Through this challenge, I was able to modify a starter code to crate a random password generator. This page allows uesrs to generate a password by going through a series of prompts and selecting the criteria that they want their password to contain. The password generator will return a password containing all of the criteria that the user chose while going through the prompts. The project was completed by following the acceptance criterias below:
+Through this challenge, I was able to modify a starter code to crate a random password generator. This page allows uesrs to generate a password by going through a series of prompts and selecting the criteria that they want their password to contain. The generator will return a password containing all of the criteria that the user chose while going through the prompts. The project was completed by following the acceptance criterias below:
 
 ```
 GIVEN I need a new, secure password
@@ -22,7 +22,9 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions, as well as other methods, in order to add options that the user chose and generate a password based on their selections. 
+This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions, as well as other methods, in order to add the options chonsen by the user and generate a password based on their selections. 
+
+## Usage
 
 I was given starter code for this project. The CSS and JS files were attached to the HTML. From there, I was able to add my own code to get the page to generate a random password. The image below shows how the final product appears after going through th prompts and generating a random password:
 
@@ -37,3 +39,7 @@ W3Schools
 TutorialsTeacher
 
 ## Links
+
+GitHub Repository Link: https://github.com/jkimys2/JN-Password-Generator
+
+Deployed Application: 
