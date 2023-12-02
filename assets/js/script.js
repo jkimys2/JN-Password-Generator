@@ -10,6 +10,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
+
 // create a function that will return the final password
 function generatePassword() {
 
@@ -19,9 +20,11 @@ function generatePassword() {
   var lowercase = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
   var uppercase =  "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
   
+
   // Prompt that will allow the user to choose a password length
   var passwordLength = prompt("How many characters would you like your password to contain?");
   
+
   // if statement that will close prompt if the user clicks cancel
   if (passwordLength === null) {
     return;
@@ -29,12 +32,14 @@ function generatePassword() {
     passwordLength;
   };
 
+
    // if statement to alert the user that their password has to be between 8-128 characters
   if (passwordLength < 8 || passwordLength > 128) {
     alert("You must choose between 8 and 128 characters! \nPlease try again.")
     var passwordLength = prompt("How many characters would you like your password to contain?");
   };
  
+
   // prompts that will allow the user to choose the rest of the criteria for their password
   var specialCharacterChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
   var numericChoice = confirm("Please select OK to include NUMBERS!");
@@ -60,9 +65,11 @@ function generatePassword() {
     charactersChosen += uppercase;
   };
  
+
   // Array that holds the characters chosen by user
   var chosenArray = charactersChosen.split(" ");
   
+
   // for loop that will generate radom password based on chosen characters
   var passwordString = "";
   for (var i = 0; i < passwordLength; i++) {
@@ -71,6 +78,7 @@ function generatePassword() {
   }
   return passwordString
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
