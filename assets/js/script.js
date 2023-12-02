@@ -24,11 +24,11 @@ function generatePassword() {
   // Prompt that will allow the user to choose a password length
   var passwordLength = parseInt(prompt("How many characters would you like your password to contain?"));
   
-console.log(passwordLength)
+
   // if statement that will close prompt if the user clicks cancel
   if (passwordLength === null || isNaN(passwordLength)) {
-    alert("Password length must be a number")
-    return "Please try again";
+    alert("Password length must be a number!")
+    return "Please try again!";
   };
 
 
@@ -65,8 +65,8 @@ console.log(passwordLength)
   };
 
   if (charactersChosen.length === 0) {
-    alert("Must select 1 character type");
-    return "Please try again";
+    alert("You must select at least 1 character type!");
+    return "Please try again!";
   }
 
   // Array that holds the characters chosen by user
