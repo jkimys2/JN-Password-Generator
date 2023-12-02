@@ -22,4 +22,4 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions the 
+This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions, as well as other methods, in order to add options that the user chose and generate a password based on their selections. 
