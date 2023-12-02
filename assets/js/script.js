@@ -18,7 +18,7 @@ function generatePassword() {
   // Variables that contain the characters that will make up the random password
   var specialCharacter = "! # $ % & ' ( ) * + , - / : ; < = > ? [ | \ ] ^ _ { } | ~ `";
   var numeric = "0 1 2 3 4 5 6 7 8 9";
-  var lowecase = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
+  var lowercase = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
   var uppercase =  "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
   
   // Prompt that will allow the user to choose a password length
@@ -47,28 +47,28 @@ function generatePassword() {
   // if statements to include the characters chosen by the user
   var charactersChosen = "";
   if(specialCharacterChoice) {
-    charactersChosen += specialCharacterChoice;
+    charactersChosen += specialCharacter;
   };
 
   if(numericChoice) {
-    charactersChosen += numericChoice;
+    charactersChosen += numeric;
   };
 
-  if(lowecaseChoice) {
-    charactersChosen += lowercaseChoice;
+  if(lowercaseChoice) {
+    charactersChosen += lowercase;
   };
 
   if(uppercaseChoice) {
-    charactersChosen += uppercaseChoice;
+    charactersChosen += uppercase;
   };
-  
+ 
   // Array that holds the characters chosen by user
   var chosenArray = charactersChosen.split(" ");
-  
+  console.log(chosenArray)
   // for loop that will generate radom password based on chosen characters
-  var passwordString
+  var passwordString = "";
   for (var i = 0; i < passwordLength; i++) {
-    var randomCharacters = math.floor((math.random() * chosenArray.length - 1) + 1);
+    var randomCharacters = Math.floor((Math.random() * chosenArray.length - 1) + 1);
     passwordString += chosenArray[randomCharacters];
   };
 
