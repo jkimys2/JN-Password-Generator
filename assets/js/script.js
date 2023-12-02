@@ -30,20 +30,38 @@ function generatePassword() {
     return;
   } else {
     passwordLength;
-  }
+  };
 
    // if statement to alert the user that their password has to be between 8-128 characters
   if (passwordLength < 8 || passwordLength > 128) {
     alert("You must choose between 8 and 128 characters! \nPlease try again.")
     var passwordLength = prompt("How many characters would you like your password to contain?");
     console.log(passwordLength)
-   }
+   };
   
   // prompts that will allow the user to choose the rest of the criteria for their password
   var specialCharactersChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
   var numericChoice = confirm("Please select OK to include NUMBERS!");
   var lowercaseChoice = confirm("Please select OK to include lowercase CHARACTERS!");
   var uppercaseChoice = confirm("Please select OK to include UPPERCASE CHARACTERS!");
+
+
+  // if statements to include the characters chosen by the user
+  var charactersChosen = "";
+  if(specialCharactersChoice) {
+    charactersChosen += specialCharactersChoice;
+  };
+
+  if(numericChoice) {
+    charactersChosen += numericChoice;
+  };
+  if(lowecaseChoice) {
+    charactersChosen += lowercaseChoice;
+  };
+  if(uppercaseChoice) {
+    charactersChosen += uppercaseChoice;
+  };
+
 
 }
   
