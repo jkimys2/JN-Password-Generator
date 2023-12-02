@@ -7,10 +7,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
-// var potentialCharacters = [];
-
 
 // create a function that will return the final password
 function generatePassword() {
@@ -64,55 +61,15 @@ function generatePassword() {
  
   // Array that holds the characters chosen by user
   var chosenArray = charactersChosen.split(" ");
-  console.log(chosenArray)
+  
   // for loop that will generate radom password based on chosen characters
   var passwordString = "";
   for (var i = 0; i < passwordLength; i++) {
     var randomCharacters = Math.floor((Math.random() * chosenArray.length - 1) + 1);
     passwordString += chosenArray[randomCharacters];
   };
-
-
-
 }
   
-
-//     // if statements to include the prompts that are chosen by the user
-//     if (specialCharactersChoice)
-
-    
-   
-//     // if state to include lowercase letters
-    
-//     // if statement to include uppercase letters
-//     if (uppercase) {
-//       // logic that includes the upper case letters
-//       // create array that holds the potential characters that will make up the PW
-     
-//     }
-// // push the values based on potiential characters
-// var potentialCharacters = 
-// // create an arrau variable that holds the uipper characters
-
-// }
-// potentialcharacters.push(uppercase)
-// // time to generate passwords
-// var length = 
-
-
-// once i get my potcharact with all of the potential characters based on user choice, 
-// I need to iterate through the array and choose a random character from the potential characters arrays
-
-// iterate thorugh array and choose one randome charact based on chosen link, keep in mind you want each character type represented
-// if the lenght is 10, you need to iterate through it 10 times
-
-
-
-
-
-
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
