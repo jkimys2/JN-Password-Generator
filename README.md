@@ -22,11 +22,11 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions, as well as other methods, in order to add the options chonsen by the user and generate a password based on their selections. 
+This challenege has shown me much about JavaScript and how I can make or add changes to the webpage. I have learned how to use variables and functions, as well as other methods, in order to add the options chosen by the user and generate a password based on their selections. 
 
 ## Usage
 
-I was given starter code for this project. The CSS and JS files were attached to the HTML. From there, I was able to add my own code to get the page to generate a random password. The image below shows how the final product appears after going through th prompts and generating a random password:
+I was given starter code for this project. The CSS and JS files were attached to the HTML. From there, I was able to add my own code to get the page to generate a random password. The image below shows how the final product appears after going through the prompts and generating a random password:
 
 ![Final Gnerator](./assets/images/final-screenshot.png)
 
