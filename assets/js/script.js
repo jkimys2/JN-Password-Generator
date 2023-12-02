@@ -8,15 +8,14 @@ function writePassword() {
 
   passwordText.value = password;
 
-}var potentialCharacters = [];
+}
+// var potentialCharacters = [];
 
 
 // create a function that will return the final password
 function generatePassword() {
 
-
   // Variables that contain the characters that will make up the random password
-  // var passwordLength
   var specialCharactersChoice = "! # $ % & ' ( ) * + , - / : ; < = > ? [ | \ ] ^ _ { } | ~ `";
   var numericChoice = "0 1 2 3 4 5 6 7 8 9";
   var lowecaseChoice = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
@@ -63,12 +62,14 @@ function generatePassword() {
     charactersChosen += uppercaseChoice;
   };
 
-
   // Array that holds the characters chosen by user
   var chosenArray = charactersChosen.split(" ");
 
-  // for loop that will generate random password based on chosen characters
-  
+  // for loop that will generate radom password based on chosen characters
+  var passwordStringn
+  for (var i = 0; i < passwordLength; i++) {
+    var randomCharacters = math.floor(math.random() )
+  }
 
 
 
@@ -98,7 +99,8 @@ function generatePassword() {
 // var length = 
 
 
-// once i get my potcharact with all of the potential characters based on user choice, I need to iterate through the array and choose a random character from the potential characters arrays
+// once i get my potcharact with all of the potential characters based on user choice, 
+// I need to iterate through the array and choose a random character from the potential characters arrays
 
 // iterate thorugh array and choose one randome charact based on chosen link, keep in mind you want each character type represented
 // if the lenght is 10, you need to iterate through it 10 times
