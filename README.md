@@ -38,4 +38,4 @@ Thank you, Corey Yates and Michael Hodges for all your help! 😁
 
 GitHub Repository Link: https://github.com/jkimys2/JN-Password-Generator
 
-Deployed Application: 
+Deployed Application: https://jkimys2.github.io/JN-Password-Generator/
