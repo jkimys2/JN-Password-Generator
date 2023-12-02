@@ -32,11 +32,7 @@ I was given starter code for this project. The CSS and JS files were attached to
 
 ## Credits
 
-MDN Web Docs
 
-W3Schools
-
-TutorialsTeacher
 
 ## Links
 

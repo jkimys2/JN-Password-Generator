@@ -15,21 +15,20 @@ function writePassword() {
 function generatePassword() {
 
   // Variables that contain the characters that will make up the random password
-  var specialCharacter = "! # $ % & ' ( ) * + , - / : ; < = > ? [ | \ ] ^ _ { } | ~ `";
-  var numeric = "0 1 2 3 4 5 6 7 8 9";
-  var lowercase = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
-  var uppercase =  "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
+  var specialCharacter = "!#$%&'()*+,-/:;<=>?[]|\^_{}|~`";
+  var numeric = "0123456789";
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var uppercase =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   
 
   // Prompt that will allow the user to choose a password length
-  var passwordLength = prompt("How many characters would you like your password to contain?");
+  var passwordLength = parseInt(prompt("How many characters would you like your password to contain?"));
   
-
+console.log(passwordLength)
   // if statement that will close prompt if the user clicks cancel
-  if (passwordLength === null) {
-    return;
-  } else {
-    passwordLength;
+  if (passwordLength === null || isNaN(passwordLength)) {
+    alert("Password length must be a number")
+    return "Please try again";
   };
 
 
@@ -64,16 +63,20 @@ function generatePassword() {
   if(uppercaseChoice) {
     charactersChosen += uppercase;
   };
- 
+
+  if (charactersChosen.length === 0) {
+    alert("Must select 1 character type");
+    return "Please try again";
+  }
 
   // Array that holds the characters chosen by user
-  var chosenArray = charactersChosen.split(" ");
+  var chosenArray = charactersChosen.split("");
   
 
   // for loop that will generate radom password based on chosen characters
   var passwordString = "";
   for (var i = 0; i < passwordLength; i++) {
-    var randomCharacters = Math.floor((Math.random() * chosenArray.length - 1) + 1);
+    var randomCharacters = Math.floor(Math.random() * chosenArray.length);
     passwordString += chosenArray[randomCharacters];
   }
   return passwordString
