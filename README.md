@@ -32,7 +32,7 @@ I was given starter code for this project. The CSS and JS files were attached to
 
 ## Credits
 
-
+Thank you, Corey Yates and Michael Hodges for all your help! 😁
 
 ## Links
 
