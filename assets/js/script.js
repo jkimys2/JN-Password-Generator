@@ -25,19 +25,25 @@ function generatePassword() {
   // Prompt that will allow the user to choose a password length
   var passwordLength = prompt("How many characters would you like your password to contain?");
   
+  // if statement that will close prompt if the user clicks cancel
+  if (passwordLength === null) {
+    return;
+  } else {
+    passwordLength;
+  }
 
-   // if statement to set the parameters of the password length
+   // if statement to alert the user that their password has to be between 8-128 characters
   if (passwordLength < 8 || passwordLength > 128) {
     alert("You must choose between 8 and 128 characters! \nPlease try again.")
     var passwordLength = prompt("How many characters would you like your password to contain?");
     console.log(passwordLength)
    }
   
-  // prompts that will allow the user to choose the rest of the criteria of their password
-  var specialCharactersChoice = confirm("Please select OK to include special characters!");
-  var numericChoice = confirm("Please select OK to include numbers!");
-  var lowercaseChoice = confirm("Please select OK to include lowercase characters!");
-  var uppercaseChoice = confirm("Please select OK to include uppercase characters!");
+  // prompts that will allow the user to choose the rest of the criteria for their password
+  var specialCharactersChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
+  var numericChoice = confirm("Please select OK to include NUMBERS!");
+  var lowercaseChoice = confirm("Please select OK to include lowercase CHARACTERS!");
+  var uppercaseChoice = confirm("Please select OK to include UPPERCASE CHARACTERS!");
 
 }
   
