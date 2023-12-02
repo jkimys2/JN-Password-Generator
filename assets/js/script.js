@@ -16,7 +16,7 @@ function writePassword() {
 function generatePassword() {
 
   // Variables that contain the characters that will make up the random password
-  var specialCharactersChoice = "! # $ % & ' ( ) * + , - / : ; < = > ? [ | \ ] ^ _ { } | ~ `";
+  var specialCharacterChoice = "! # $ % & ' ( ) * + , - / : ; < = > ? [ | \ ] ^ _ { } | ~ `";
   var numericChoice = "0 1 2 3 4 5 6 7 8 9";
   var lowecaseChoice = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
   var uppercaseChoice =  "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
@@ -38,7 +38,7 @@ function generatePassword() {
    };
  
   // prompts that will allow the user to choose the rest of the criteria for their password
-  var specialCharactersChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
+  var specialCharacterChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
   var numericChoice = confirm("Please select OK to include NUMBERS!");
   var lowercaseChoice = confirm("Please select OK to include lowercase CHARACTERS!");
   var uppercaseChoice = confirm("Please select OK to include UPPERCASE CHARACTERS!");
@@ -47,7 +47,7 @@ function generatePassword() {
   // if statements to include the characters chosen by the user
   var charactersChosen = "";
   if(specialCharactersChoice) {
-    charactersChosen += specialCharactersChoice;
+    charactersChosen += specialCharacterChoice;
   };
 
   if(numericChoice) {
@@ -61,12 +61,12 @@ function generatePassword() {
   if(uppercaseChoice) {
     charactersChosen += uppercaseChoice;
   };
-
+  console.log(charactersChosen)
   // Array that holds the characters chosen by user
   var chosenArray = charactersChosen.split(" ");
-
+  console.log(chosenArray)
   // for loop that will generate radom password based on chosen characters
-  var passwordStringn
+  var passwordString
   for (var i = 0; i < passwordLength; i++) {
     var randomCharacters = math.floor(math.random() )
   }
