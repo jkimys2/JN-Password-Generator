@@ -30,8 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-/* some of the classes were changed to ids because they were only being called once */
-#card {
+.card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -43,7 +42,7 @@ header {
   padding: 30px 40px;
 }
 
-#card-header::after {
+.card-header::after {
   content: " ";
   display: block;
   width: 100%;
@@ -51,15 +50,15 @@ header {
   height: 2px;
 }
 
-#card-body {
+.card-body {
   min-height: 100px;
 }
 
-#card-footer {
+.card-footer {
   text-align: center;
 }
 
-#card-footer::before {
+.card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -67,7 +66,7 @@ header {
   height: 2px;
 }
 
-#card-footer::after {
+.card-footer::after {
   content: " ";
   display: block;
   clear: both;
