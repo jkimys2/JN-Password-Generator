@@ -33,7 +33,7 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
     alert("You must choose between 8 and 128 characters! \nPlease try again.")
     var passwordLength = prompt("How many characters would you like your password to contain?");
-   };
+  };
  
   // prompts that will allow the user to choose the rest of the criteria for their password
   var specialCharacterChoice = confirm("Please select OK to include SPECIAL CHARACTERS!");
@@ -68,8 +68,8 @@ function generatePassword() {
   for (var i = 0; i < passwordLength; i++) {
     var randomCharacters = Math.floor((Math.random() * chosenArray.length - 1) + 1);
     passwordString += chosenArray[randomCharacters];
-  } 
-  return passwordString;
+  }
+  return passwordString
 }
 
 // Add event listener to generate button
